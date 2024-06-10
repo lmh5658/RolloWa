@@ -232,7 +232,7 @@ Notion : https://www.notion.so/6f82052c952b487c83cab947dab2f65f
 > 결재를 진행하고 반환되는 정보를 이용해서 구매 고유번호, 결재상태, 수량, 가격, 구매자 정보들을 ajax의			<br>
 > JSON.stringify()을 이용하여 DB에 결재 명세 저장했습니다.								<br>
 
-> ![결제](https://github.com/leeyechanbal/RolloWa/assets/153481748/4b7cea60-7b39-460d-83e5-05a972a4e1ae)
+![토스페이](https://github.com/leeyechanbal/RolloWa/assets/153481748/d279f179-23dd-4f0a-9d4b-c54428c41300)
 
 
 ***
