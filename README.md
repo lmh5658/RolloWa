@@ -94,43 +94,6 @@ Notion : https://www.notion.so/6f82052c952b487c83cab947dab2f65f
 > 회사의 일정 등록 페이지를 이동할  Spring의 interceptor와 HttpSession을 통해 로그인된 회원의 권한을 체크하고		<br>
 > 권한이 부족한 회원일 경우 알림창으로 알려주며 historyback을 이용해 이전 화면으로 되돌리고 있습니다. 			<br>
 
-### 부장급 이상인지 체크하는  인터셉터
-	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)throws Exception {
-			response.setCharacterEncoding("UTF-8");
-			String position = (String)((MemberDto)request.getSession().getAttribute("loginMember")).getPositionCode();
-			if(position != null && (position.equals("E") || position.equals("F"))) {
-				return true;
-			}else {
-				PrintWriter out = response.getWriter();
-				out.print("<html><head><meta charset='UTF-8'>");
-				out.print("<script src='http://code.jquery.com/jquery-3.7.1.min.js'></script>");
-				out.print("<script src='"+request.getContextPath()+"/resources/js/iziModal.min.js'></script>");
-				out.print("<link  href='"+request.getContextPath()+"/resources/css/iziModal.min.css' rel='stylesheet'>");
-				out.print("</head><body>");
-				
-				out.print("<div id=\"redModal\"></div>");
-				
-				out.print("<script>$('#redModal').iziModal({"
-						+ "headerColor: '#dc3545',"
-						+ "timeout: 3000,"
-						+ "timeoutProgressbar: true,"
-						+ "onClosing: function(){history.back();}"
-						+ "});");
-				
-				out.print("function redAlert(title, content){"
-						+ "$('#redModal').iziModal('setTitle', title);"
-						+ "$('#redModal').iziModal('setSubtitle', content);"
-						+ "$('#redModal').iziModal('open');"
-						+ "}");
-				
-				out.print("redAlert('권한 체크', '해당 계정으로 사용할 수 없습니다.');</script>");			
-				out.print("</body></html>");
-				return false;
-			}
-		}
-
-## ????????????????이쪽 코드를 굳이 보여줄 필요가 있을까요?
-
 > ![권한_체크](https://github.com/leeyechanbal/RolloWa/assets/153481748/d3cc258a-19a9-4b08-8ae8-adc1905b5a4c)
 
 ### ③ [ 일정관리 ]
@@ -215,17 +178,6 @@ Notion : https://www.notion.so/6f82052c952b487c83cab947dab2f65f
 		}
 		return result;
 	}
-##  입사일 기준으로 자동으로 지급일을 갱신하는 트리거
-	create or replace trigger INSERT_GIVENDATE
-	AFTER INSERT ON MEMBER
-	BEGIN
-	    update member a
-	    set GIVEN_DATE = (select extract (day from ENROLL_DATE) 
-	                        from member b where a.user_no = b.user_no );
-	END;
-
- 
-## ????????????여기도 굳이 이런 코드를 보여줄 필요가 있을까요?
 
 ### ⑤ [ 이용권 결재 ]
 > 포트원 API를 이용하여 드사와 결재 수단, 구매 고유번호 등을 생성 및 V1모달을 통해 포트원으로 전달하여			<br>
