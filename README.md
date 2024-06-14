@@ -15,7 +15,7 @@
 > 5 ~ 8주 차 : 기능 구현                <br>
 > 9주 차 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 기능 테스트  <br>
 
-Notion : https://www.notion.so/6f82052c952b487c83cab947dab2f65f
+[PPT : https://www.notion.so/6f82052c952b487c83cab947dab2f65f](https://docs.google.com/presentation/d/1dv7Br13IOE09YON_pPn6MN_0A58Ti5bdaWc-CMmNPjI/edit?hl=ko#slide=id.g2e2a7122927_1_230)
 
 
 ## 🧑🏻‍💻 [ Contribute ]
