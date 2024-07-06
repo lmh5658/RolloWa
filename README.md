@@ -23,30 +23,39 @@
 |:---:|
 |![approvalMain3](https://github.com/lmh5658/RolloWa/assets/153481805/309fb06a-f941-451e-b818-9bc2ab4bef66)|
 <br />
+![image](https://github.com/lmh5658/RolloWa/assets/153481805/65e037cc-4d71-49f7-ba3e-6303a6f52a2d)
+![image](https://github.com/lmh5658/RolloWa/assets/153481805/1c7de4c1-6e1a-454a-8a70-6cd1c68fec52)
+결재대기함 또는 일주일 이상 지연된 결재대기함은 1차 승인자가 승인해야 2차 승인자가 게시글 목록을 볼 수 있고, 2차 승인자가 승인해야 3차 승인자가 게시글을 볼 수 있도록 구현되었습니다.
+
+WHERE 절에서 결재 상태가 '진행' 또는 '대기' 상태인 문서들만 선택했습니다. 로그인한 사용자의 userName 값을 전달하여 DB에 저장된 첫 번째 승인자와 userName 값이 일치하면 게시판 글이 보이도록 설정했습니다. 일치하지 않는 경우, OR 조건을 사용하여 첫 번째 승인 날짜가 is not null이고 DB에 저장된 두 번째 승인자와 userName 값이 일치하는지 비교했습니다. 그리고 두 번째 승인 날짜 값이 is null인 경우 해당 게시글이 보이도록 했습니다.
+
+한 가지 아쉬웠던 점은 로그인한 사용자의 이름값과 비교를 하기 때문에 동일한 이름이 있을 수 있다는 점을 고려하지 못했다는 것입니다. DB 설계 시 사용자 번호 컬럼을 고려하지 않았던 점이 아쉬웠습니다.
+
 
 |결재진행함 : |
 |:---:|
-|![approvalMain3](https://github.com/lmh5658/RolloWa/assets/153481805/309fb06a-f941-451e-b818-9bc2ab4bef66)|
+||
 <br />
+
 
 |결재상신함 : |
 |:---:|
-|![approvalMain3](https://github.com/lmh5658/RolloWa/assets/153481805/309fb06a-f941-451e-b818-9bc2ab4bef66)|
+||
 <br />
 
 |결재작성페이지|
 |:---:|
-|![approvalMain3](https://github.com/lmh5658/RolloWa/assets/153481805/309fb06a-f941-451e-b818-9bc2ab4bef66)|
+||
 <br />
 
 |결재상세페이지|
 |:---:|
-|![approvalMain3](https://github.com/lmh5658/RolloWa/assets/153481805/309fb06a-f941-451e-b818-9bc2ab4bef66)|
+||
 <br />
 
 |결재 승인 및 반려|
 |:---:|
-|![approvalMain3](https://github.com/lmh5658/RolloWa/assets/153481805/309fb06a-f941-451e-b818-9bc2ab4bef66)|
+||
 <br />
 
 
