@@ -22,7 +22,6 @@
 |관리자홈 : |
 |:---:|
 |![approvalMain3](https://github.com/lmh5658/RolloWa/assets/153481805/309fb06a-f941-451e-b818-9bc2ab4bef66)|
-<br/>
 |:---:|
 |![1](https://github.com/lmh5658/RolloWa/assets/153481805/acc7cd53-a900-47b0-b06e-3d95b417fa84)|
 |:---:|
