@@ -74,42 +74,19 @@
 > skills 폴더에 있는 아이콘을 이용할 수 있습니다.
 ### Back-End
 <div>
-<img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/Java.png?raw=true" width="80">
-<img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/Spring Framework.png?raw=true" width="80">
-<img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/oracle.png?raw=true" width="80">
-<img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/Ajax.png?raw=true" width="80">
-<img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/Mybatis.png?raw=true" width="80">
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
+![Ajax](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=ajax&logoColor=white)
+![Mybatis](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=mybatis&logoColor=white)
 ### Front-End
-<img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/Html.png?raw=true" width="80">
-<img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/CSS.png?raw=true" width="80">
+![HTML](https://img.shields.io/badge/html-%23E34F26.svg?style=for-the-badge&logo=html&logoColor=white)
+![CSS](https://img.shields.io/badge/css-%231572B6.svg?style=for-the-badge&logo=css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 <img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/JavaScript.png?raw=true" width="80">
-<img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/JQuery.png?raw=true" width="80">
-<img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/JSP.png?raw=true" width="80">
+![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
 </div>
 ### Data Base
-<img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/Oracle.png?raw=true" width="80">
-### Tool
-<img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/Eclipse.png?raw=true" width="80">
-<img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/Github.png?raw=true" width="80">
-<br />
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-* [![Eclipse][Eclipse.com]][Eclipse-url]
-* [![Github][Github.com]][Github-url]
+![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
