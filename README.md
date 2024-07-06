@@ -51,14 +51,12 @@
 
 
 ## 🤔 기술적 이슈와 해결 과정
-- Stream 써야할까?
-    - [Stream API에 대하여](https://velog.io/@yewo2nn16/Java-Stream-API)
-- Gmail STMP 이용하여 이메일 전송하기
-    - [gmail 보내기](https://velog.io/@yewo2nn16/Email-이메일-전송하기with-첨부파일)
-- AWS EC2에 배포하기
-    - [서버 배포하기-1](https://velog.io/@yewo2nn16/SpringBoot-서버-배포)
-    - [서버 배포하기-2](https://velog.io/@yewo2nn16/SpringBoot-서버-배포-인텔리제이에서-jar-파일-빌드해서-배포하기)
-    - 
+### 결재 승인
+**설명:** 사용자가 결재 문서를 승인했을 때 승인싸인이 화면에 출력되지않거나, DB에 insert 되지 않는 경우를 확인
+**해결 과정:**
+1. 원인 분석: canvas 를 활용해 싸인그림을 그리고  
+2. 상태 업데이트 로직 수정 및 실시간 상태 업데이트 구현.
+
 <br />
 
 ## 💁‍♂️ 프로젝트 팀원
