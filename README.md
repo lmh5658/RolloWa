@@ -20,7 +20,7 @@
 </div>
 
 ### 화면 구성
-|Screen #1|
+|관리자홈|
 |:---:|
 |![approvalMain3](https://github.com/lmh5658/RolloWa/assets/153481805/309fb06a-f941-451e-b818-9bc2ab4bef66)|
 <br />
