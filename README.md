@@ -23,8 +23,8 @@
 |:---:|
 |![approvalMain3](https://github.com/lmh5658/RolloWa/assets/153481805/309fb06a-f941-451e-b818-9bc2ab4bef66)|
 <br/>
-![D](https://github.com/lmh5658/RolloWa/assets/153481805/e1c1e5c4-d596-4129-ac69-6629afd1dc9c)
-![F](https://github.com/lmh5658/RolloWa/assets/153481805/19a972b0-cb17-4124-a192-f91428aa21a2)
+![DAYS](https://github.com/lmh5658/RolloWa/assets/153481805/7ef28962-8c2b-4723-93df-d7cdbd5b209b)
+![NO](https://github.com/lmh5658/RolloWa/assets/153481805/61859503-fd4c-43cf-b5ad-f27edd0f4bed)
 
 결재대기함 또는 일주일 이상 지연된 결재대기함은 1차 승인자가 승인해야 2차 승인자가 게시글 목록을 볼 수 있고, 2차 승인자가 승인해야 3차 승인자가 게시글을 볼 수 있도록 구현되었습니다.
 
