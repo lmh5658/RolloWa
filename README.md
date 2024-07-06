@@ -23,8 +23,9 @@
 |:---:|
 |![approvalMain3](https://github.com/lmh5658/RolloWa/assets/153481805/309fb06a-f941-451e-b818-9bc2ab4bef66)|
 <br/>
-![image](https://github.com/lmh5658/RolloWa/assets/153481805/b5da02c8-fc09-4a63-94dc-a6f15d6474ed)
-![image](https://github.com/lmh5658/RolloWa/assets/153481805/403a787f-db0c-4475-910c-3f31805285cf)
+![D](https://github.com/lmh5658/RolloWa/assets/153481805/e1c1e5c4-d596-4129-ac69-6629afd1dc9c)
+![F](https://github.com/lmh5658/RolloWa/assets/153481805/19a972b0-cb17-4124-a192-f91428aa21a2)
+
 결재대기함 또는 일주일 이상 지연된 결재대기함은 1차 승인자가 승인해야 2차 승인자가 게시글 목록을 볼 수 있고, 2차 승인자가 승인해야 3차 승인자가 게시글을 볼 수 있도록 구현되었습니다.
 
 WHERE 절에서 결재 상태가 '진행' 또는 '대기' 상태인 문서들만 선택했습니다. 로그인한 사용자의 userName 값을 전달하여 DB에 저장된 첫 번째 승인자와 userName 값이 일치하면 게시판 글이 보이도록 설정했습니다. 일치하지 않는 경우, OR 조건을 사용하여 첫 번째 승인 날짜가 is not null이고 DB에 저장된 두 번째 승인자와 userName 값이 일치하는지 비교했습니다. 그리고 두 번째 승인 날짜 값이 is null인 경우 해당 게시글이 보이도록 했습니다.
