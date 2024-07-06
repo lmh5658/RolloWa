@@ -74,21 +74,20 @@
 > skills 폴더에 있는 아이콘을 이용할 수 있습니다.
 ### Back-End
 <div>
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-<img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=white">
-![Ajax](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=ajax&logoColor=white)
-![Mybatis](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=mybatis&logoColor=white)
+<img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=OpenJDK&logoColor=white"> <br>
+<img src="https://img.shields.io/badge/Spring Security-6DB33F?style=for-the-badge&logo=Spring Security&logoColor=white"> <br>
+<img src="https://img.shields.io/badge/Ajax-6DB33F?style=for-the-badge&logo=Ajax&logoColor=white"> <br>
+<img src="https://img.shields.io/badge/Mybatis-6DB33F?style=for-the-badge&logo=Mybatis&logoColor=white"> <br>
 ### Front-End
-![HTML](https://img.shields.io/badge/html-%23E34F26.svg?style=for-the-badge&logo=html&logoColor=white)
-![CSS](https://img.shields.io/badge/css-%231572B6.svg?style=for-the-badge&logo=css&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-<img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/JavaScript.png?raw=true" width="80">
-![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white">
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white">
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white">
+<img src="https://img.shields.io/badge/jQuery-F7DF1E?style=for-the-badge&logo=jQuery&logoColor=white">
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white">
 </div>
 ### Data Base
-![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+<img src="https://img.shields.io/badge/Oracle-4479A1?style=for-the-badge&logo=Oracle&logoColor=white">
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🛠️ 프로젝트 아키텍쳐
 ![no-image](https://user-images.githubusercontent.com/80824750/208294567-738dd273-e137-4bbf-8307-aff64258fe03.png)
