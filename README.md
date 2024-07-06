@@ -7,7 +7,6 @@
 출/퇴근 관리, 매출 현황, 비품 관리부터 전자결재, 일정 및 채팅까지 다양한 기능을 통해 업무를 간편하게 관리할 수 있습니다.
 
 ## ⚙ 기술 스택
-### Back-End
 <div>
 <img src="https://img.shields.io/badge/java-007396?style=flat-square&logo=java&logoColor=white"/>
 <img src="https://img.shields.io/badge/Spring Security-6DB33F?style=for-the-badge&logo=Spring Security&logoColor=white"> 
@@ -20,7 +19,32 @@
 </div>
 
 ### 화면 구성
-|관리자홈|
+|관리자홈 : |
+|:---:|
+|![approvalMain3](https://github.com/lmh5658/RolloWa/assets/153481805/309fb06a-f941-451e-b818-9bc2ab4bef66)|
+<br />
+
+|결재진행함 : |
+|:---:|
+|![approvalMain3](https://github.com/lmh5658/RolloWa/assets/153481805/309fb06a-f941-451e-b818-9bc2ab4bef66)|
+<br />
+
+|결재상신함 : |
+|:---:|
+|![approvalMain3](https://github.com/lmh5658/RolloWa/assets/153481805/309fb06a-f941-451e-b818-9bc2ab4bef66)|
+<br />
+
+|결재작성페이지|
+|:---:|
+|![approvalMain3](https://github.com/lmh5658/RolloWa/assets/153481805/309fb06a-f941-451e-b818-9bc2ab4bef66)|
+<br />
+
+|결재상세페이지|
+|:---:|
+|![approvalMain3](https://github.com/lmh5658/RolloWa/assets/153481805/309fb06a-f941-451e-b818-9bc2ab4bef66)|
+<br />
+
+|결재 승인 및 반려|
 |:---:|
 |![approvalMain3](https://github.com/lmh5658/RolloWa/assets/153481805/309fb06a-f941-451e-b818-9bc2ab4bef66)|
 <br />
@@ -45,5 +69,3 @@
 > - 김호관 : 조직관리, 구성원관리, 예약관리
 > - 유가림 : 메인페이지, 게시판, 어트랙션, 이용권매출
 > - 이예찬 : 부서일정, 회사 일정, 휴가 신청, 휴가 결재, 이용권결제}
->
-> - 
