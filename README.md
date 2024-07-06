@@ -6,13 +6,7 @@
 > 놀이공원 운영을 위한 효율적인 그룹웨어 서비스 <br>
 > 출/퇴근, 매출 현황, 비품 관리부터 전자결재, 일정 및 채팅까지 다양한 기능을 통해 업무를 간편하게 관리할 수 있습니다.
 
-
-> 화면 구성과 프로토 타입 중 원하는 것을 사용해주세요.
-
-
-
 ## ⚙ 기술 스택
-> skills 폴더에 있는 아이콘을 이용할 수 있습니다.
 ### Back-End
 <div>
 <img src="https://img.shields.io/badge/java-007396?style=flat-square&logo=java&logoColor=white"/>
