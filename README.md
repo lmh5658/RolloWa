@@ -47,6 +47,8 @@ WHERE 절에서 결재 상태가 '진행' 또는 '대기' 상태인 문서들만
 ||
 
 ![image](https://github.com/lmh5658/RolloWa/assets/153481805/d47e7c59-7bb7-42d3-9be1-671c3cd4f523)
+![image](https://github.com/lmh5658/RolloWa/assets/153481805/69849369-0ae8-4b04-9282-8fbca7e8639d)
+승인자 1차승인자인지 2차 승인자인지 3차 승인자인지 구별하기위하여 1차 승인자이면 1, 2차승인자이면2, 3차 승인자이면 3을 전달하였다.
 
 
 
