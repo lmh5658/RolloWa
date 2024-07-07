@@ -30,15 +30,14 @@
 ||
 
 
-|![NO](https://github.com/lmh5658/RolloWa/assets/153481805/031a2ddd-49ff-4dab-b3dc-2f19dd019216)|<br>
+![NO](https://github.com/lmh5658/RolloWa/assets/153481805/031a2ddd-49ff-4dab-b3dc-2f19dd019216)<br>
 
 결재대기함 또는 일주일 이상 지연된 결재대기함은 1차 승인자가 승인해야 2차 승인자가 게시글 목록을 볼 수 있고, 2차 승인자가 승인해야 3차 승인자가 게시글을 볼 수 있도록 구현하였습니다. <br>
 WHERE 절에서 결재 상태가 '진행' 또는 '대기' 상태인 문서들만 선택했습니다. 로그인한 사용자의 userName 값을 전달하여 DB에 저장된 첫 번째 승인자와 userName 값이 일치하면 게시판 글이 보이도록 설정했습니다. 일치하지 않는 경우, OR 조건을 사용하여 첫 번째 승인 날짜가 is not null이고 DB에 저장된 두 번째 승인자와 userName 값이 일치하는지 비교했습니다. 그리고 두 번째 승인 날짜 값이 is null인 경우 해당 게시글이 보이도록 했습니다.<br>
 <br>
 
 
-|![image](https://github.com/lmh5658/RolloWa/assets/153481805/4998780b-da57-486b-b1d9-0696322ddcdd)|<br>
-
+![image](https://github.com/lmh5658/RolloWa/assets/153481805/4998780b-da57-486b-b1d9-0696322ddcdd)<br>
 TODAY는 오늘 날짜로 들어온 문서의 갯수를 명확히 파악하기 위해 구현하였습니다.<br>
 <br>
 
@@ -77,16 +76,29 @@ TODAY는 오늘 날짜로 들어온 문서의 갯수를 명확히 파악하기 �
 
 ## 🤔 프로젝트에서 문제점을 해결한 과정
 ### 결재 승인
-**설명:** 사용자가 결재 문서를 승인했을 때 승인싸인이 화면에 출력되지않거나, DB에 insert 되지 않는 경우를 확인
-**해결 과정:**
-1. 원인 분석: canvas 를 활용해 싸인그림을 그리고  
-2. 상태 업데이트 로직 수정 및 실시간 상태 업데이트 구현.
+설명:
+사용자가 결재 문서를 승인했을 때, 승인 싸인이 화면에 출력되지 않거나 DB에 insert 되지 않는 경우를 확인하였습니다.
 
-<br>
+###### 해결 과정:
 
+###### 원인 분석:
+Canvas에서 그린 그림을 PNG 형식으로 변환할 경우, 문자열이 매우 길어져 VARCHAR2의 최대 길이인 4000 bytes를 초과하여 저장되지 않는 문제를 확인했습니다.<br>
+
+######  해결 방안:
+VARCHAR2를 CLOB로 변환하여 저장 용량을 늘렸습니다.<br>
+다음과 같은 순서로 테이블을 변경했습니다<br>
+
+ALTER TABLE APPROVAL ADD (tests CLOB);
+UPDATE APPROVAL SET tests = FIRST_SIGN;
+COMMIT;
+ALTER TABLE APPROVAL DROP COLUMN FIRST_SIGN;
+ALTER TABLE APPROVAL RENAME COLUMN tests TO FIRST_SIGN;
+
+이 과정을 통해 승인 싸인이 정상적으로 화면에 출력되고, DB에 저장되도록 문제를 해결했습니다.<br>
 
 ##  🔨 프로젝트의 개선점
-결재 실시간 알림, 회수 기능, 기안서 신청서페이지 속도 개선<br>
+> - 결재 실시간 알림, 회수 기능추가<br>
+> - 기안서 신청서페이지 속도 개선<br>
 
 ## 💁‍♂️ 프로젝트 팀원
 |Backend|Frontend|
