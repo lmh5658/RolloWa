@@ -18,7 +18,6 @@
   <img src="https://img.shields.io/badge/oracle-F80000?logo=visualstudiocode&logoColor=white" height="30px"> 		<br><br> 
   <img src="https://img.shields.io/badge/github-181717?logo=github&logoColor=white" height="30px"> 			&nbsp;
   <img src="https://img.shields.io/badge/apachetomcat9-F8DC75?logo=apachetomcat&logoColor=black" height="30px"> 	<br><br> 
-  <img src="https://img.shields.io/badge/fullcalendar-4285F4?logo=googlecalendar&logoColor=black" height="30px"> 	&nbsp;
   <img src="https://img.shields.io/badge/bootstrap4-7952B3?logo=bootstrap&logoColor=black" height="30px"> 		&nbsp;
   <img src="https://img.shields.io/badge/maven-C71A36?logo=apachemaven&logoColor=black" height="30px"> 			&nbsp;
   <img src="https://img.shields.io/badge/notion-000000?logo=notion&logoColor=whitek" height="30px"> 			<br><br>
@@ -33,7 +32,7 @@
 ![NO](https://github.com/lmh5658/RolloWa/assets/153481805/031a2ddd-49ff-4dab-b3dc-2f19dd019216)
 결재대기함 또는 일주일 이상 지연된 결재대기함은 1차 승인자가 승인해야 2차 승인자가 게시글 목록을 볼 수 있고, 2차 승인자가 승인해야 3차 승인자가 게시글을 볼 수 있도록 구현하였습니다. <br>
 WHERE 절에서 결재 상태가 '진행' 또는 '대기' 상태인 문서들만 선택했습니다. 로그인한 사용자의 userName 값을 전달하여 DB에 저장된 첫 번째 승인자와 userName 값이 일치하면 게시판 글이 보이도록 설정했습니다. 일치하지 않는 경우, OR 조건을 사용하여 첫 번째 승인 날짜가 is not null이고 DB에 저장된 두 번째 승인자와 userName 값이 일치하는지 비교했습니다. 그리고 두 번째 승인 날짜 값이 is null인 경우 해당 게시글이 보이도록 했습니다.<br>
-한 가지 아쉬웠던 점은 로그인한 사용자의 이름값과 비교를 하기 때문에 동일한 이름이 있을 수 있다는 점을 고려하지 못했습니다.<br>
+<br>
 ![image](https://github.com/lmh5658/RolloWa/assets/153481805/4998780b-da57-486b-b1d9-0696322ddcdd)
 TODAY는 오늘 날짜로 들어온 문서의 갯수를 명확히 파악하기 위해 구현하였습니다.<br>
 |결재신청화면|
@@ -70,7 +69,7 @@ TODAY는 오늘 날짜로 들어온 문서의 갯수를 명확히 파악하기 �
 
 
 
-## 🤔 기술적 이슈와 해결 과정
+## 🤔 프로젝트에서 문제점을 해결한 과정
 ### 결재 승인
 **설명:** 사용자가 결재 문서를 승인했을 때 승인싸인이 화면에 출력되지않거나, DB에 insert 되지 않는 경우를 확인
 **해결 과정:**
@@ -79,7 +78,8 @@ TODAY는 오늘 날짜로 들어온 문서의 갯수를 명확히 파악하기 �
 
 <br>
 
-##  🔨 추가하고 싶은 기능
+
+##  🔨 프로젝트의 개선점
 결재 실시간 알림, 회수 기능, 기안서 신청서페이지 속도 개선<br>
 
 ## 💁‍♂️ 프로젝트 팀원
