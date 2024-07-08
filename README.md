@@ -27,7 +27,8 @@
 
 |게시판화면|
 |:---:|
-|![approvalMain](https://github.com/lmh5658/RolloWa/assets/153481805/2dc5fc14-9b32-4107-a31d-3be618786f96)|
+|![approvalMainss](https://github.com/lmh5658/RolloWa/assets/153481805/3ee16c68-f08d-49a2-ac7f-5f22747efeed)
+|
 
 ![NO](https://github.com/lmh5658/RolloWa/assets/153481805/031a2ddd-49ff-4dab-b3dc-2f19dd019216)<br>
 
@@ -57,7 +58,7 @@ TODAY는 오늘 날짜로 들어온 문서의 갯수를 명확히 파악하기 �
 
 |결재승인화면|
 |:---:|
-|![approvalMain](https://github.com/lmh5658/RolloWa/assets/153481805/369bca0d-72c8-4a86-bbd4-3db58ced50c2)|
+|![checkSign](https://github.com/lmh5658/RolloWa/assets/153481805/5ad800d9-0b56-4098-8590-ae141d3b361e)|
 
 ![image](https://github.com/lmh5658/RolloWa/assets/153481805/cebafb43-af2f-4e26-9afc-7c6f56d7d952)<br>
 javaScript 화면
@@ -74,25 +75,25 @@ java Controller 화면
 |![reject](https://github.com/lmh5658/RolloWa/assets/153481805/bad5d1a2-81b0-4d66-a735-eadf95ebb414)|
 |![rejectcheck](https://github.com/lmh5658/RolloWa/assets/153481805/dc6c6328-2d44-4c7b-8b62-397dc3376fa5)|
 
-![image](https://github.com/lmh5658/RolloWa/assets/153481805/e6c1d859-5aae-4547-8587-78da38a79349)
+![image](https://github.com/lmh5658/RolloWa/assets/153481805/e6c1d859-5aae-4547-8587-78da38a79349)<br>
 결재가 반려될 때, 반려한 사람이 몇 번째 승인자인지 구별하기 위한 방법으로 새로운 컬럼을 추가하려고 생각했지만, 테이블에 너무 많은 컬럼이 추가되면 데이터베이스 I/O에 부하가 걸릴 수 있다는 점을 고려하여 좋지 않은 방법이라고 판단했습니다. 그래서 승인 데이터를 저장하는 컬럼에 '반려'라는 문자열을 저장하여 반려된 사람이 몇 번째 승인자인지 구분하도록 구현하게 되었습니다.
 
 ## 🤔 프로젝트에서 문제점을 해결한 과정
 ### 1) 결재 승인
 사용자가 결재 문서를 승인했을 때, 승인 싸인이 화면에 출력되지 않거나 DB에 insert 되지 않는 경우를 확인하였습니다.
-#### 원인 분석:
+#### 원인 분석
 Canvas에서 그린 그림을 PNG 형식으로 변환할 경우, 문자열이 매우 길어져 VARCHAR2의 최대 길이인 4000 bytes를 초과하여 저장되지 않는 문제를 확인했습니다.<br>
 
-#### 해결 방안:
+#### 해결 방안
 VARCHAR2를 CLOB로 변환하여 저장 용량을 늘렸습니다.<br>
 
 ### 2) 품목 등록
 매출보고서, 비품 신청서, 지출결의서에 들어가는 여러 품목과 다른 값들을 컨트롤러에서 Map으로 꺼내려고 했으나 품목들은 제대로 전달되지가 않았습니다.<br>
 
-#### 원인 분석:
+#### 원인 분석
 Map으로 받을 때, 콤마로 연결된 값의 전체 문자열이 하나의 키에 매핑되지 않기 때문에 값을 제대로 꺼내지 못하였습니다.<br>
 
-#### 해결 방안:
+#### 해결 방안
 List<String>을 활용하여 각 품목을 별도의 파라미터로 받아오는 방법을 선택했습니다. <br>
 예를 들어, @RequestParam("item") List<String> items와 같이 요청 파라미터를 List로 받아들이는 방식으로 구현했습니다. 이렇게 하면 같은 name값이 List안에 담겨 컨트롤러에서 쉽게 추출하여 처리할 수 있었습니다.<br>
 
