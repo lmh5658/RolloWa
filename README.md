@@ -61,19 +61,16 @@ TODAY는 오늘 날짜로 들어온 문서의 갯수를 명확히 파악하기 �
 
 > - javaScript 화면
 ![image](https://github.com/lmh5658/RolloWa/assets/153481805/cebafb43-af2f-4e26-9afc-7c6f56d7d952)<br>
+
 > - java Controller 화면
 ![image](https://github.com/lmh5658/RolloWa/assets/153481805/79549f95-907c-4c49-a07a-6152419ccbed)<br>
+
 > - mapper 화면
 ![image](https://github.com/lmh5658/RolloWa/assets/153481805/ec589c6c-bda1-4abe-a8da-68689bd492e1)<br>
 
 승인자를 구별하기 위해 삼항 연산자를 사용하여 1차 승인자이면 1, 2차 승인자이면 2, 3차 승인자이면 3으로 설정한 뒤, 싸인 이미지를 `signature.toDataURL("image/png")` 메서드를 사용하여 PNG 형식으로 변환한 후 데이터와 번호를 함께 전송하였습니다.<br>
 매퍼에서는 MyBatis의 when 절을 활용하여 전달된 번호를 비교한 후, 번호가 1이면 1차 승인자 컬럼에, 2면 2차 승인자 컬럼에, 3이면 3차 승인자 컬럼에 싸인이 저장되도록 설정하였습니다. 싸인이 성공적으로 저장되면 저장된 싸인 데이터를 다시 불러오는 작업도 수행하였습니다.<br>
 마지막으로, 전달된 번호와 싸인 이미지를 여러 값을 전달할 수 있는 Map에 담아 전달하였으며, 승인자 번호에 따라 해당하는 싸인 이미지를 img 태그를 활용하여 출력하도록 구현하였습니다.<br>
-<br>
-
-![image](https://github.com/lmh5658/RolloWa/assets/153481805/ebb05bd3-ee5a-44a6-a323-4933c15c233e)<br>
-
-비품 신청서에서 최종 승인이 완료되었을 때, 비품 품목의 값을 serialize() 메서드를 사용하여 넘겨주고 데이터베이스에 insert 하였습니다.<br>
 <br>
 
 |결재반려화면|
