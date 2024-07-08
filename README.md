@@ -59,13 +59,13 @@ TODAY는 오늘 날짜로 들어온 문서의 갯수를 명확히 파악하기 �
 |:---:|
 ||
 
-> - javaScript 화면
+javaScript 화면
 ![image](https://github.com/lmh5658/RolloWa/assets/153481805/cebafb43-af2f-4e26-9afc-7c6f56d7d952)<br>
 
-> - java Controller 화면
+java Controller 화면
 ![image](https://github.com/lmh5658/RolloWa/assets/153481805/79549f95-907c-4c49-a07a-6152419ccbed)<br>
 
-> - mapper 화면
+mapper 화면
 ![image](https://github.com/lmh5658/RolloWa/assets/153481805/ec589c6c-bda1-4abe-a8da-68689bd492e1)<br>
 
 승인자를 구별하기 위해 삼항 연산자를 사용하여 1차 승인자이면 1, 2차 승인자이면 2, 3차 승인자이면 3으로 설정한 뒤, 싸인 이미지를 `signature.toDataURL("image/png")` 메서드를 사용하여 PNG 형식으로 변환한 후 데이터와 번호를 함께 전송하였습니다.<br>
