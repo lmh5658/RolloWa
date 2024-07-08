@@ -57,9 +57,11 @@ TODAY는 오늘 날짜로 들어온 문서의 갯수를 명확히 파악하기 �
 |결재승인화면|
 |:---:|
 ||
-
+<javaScript 화면>
 ![image](https://github.com/lmh5658/RolloWa/assets/153481805/cebafb43-af2f-4e26-9afc-7c6f56d7d952)<br>
+<java Controller화면>
 ![image](https://github.com/lmh5658/RolloWa/assets/153481805/79549f95-907c-4c49-a07a-6152419ccbed)<br>
+<mapper 화면>
 ![image](https://github.com/lmh5658/RolloWa/assets/153481805/ec589c6c-bda1-4abe-a8da-68689bd492e1)<br>
 승인자를 구별하기 위해 삼항 연산자를 사용하여 1차 승인자이면 1, 2차 승인자이면 2, 3차 승인자이면 3으로 설정한 뒤, 싸인 이미지를 `signature.toDataURL("image/png")` 메서드를 사용하여 PNG 형식으로 변환한 후 데이터와 번호를 함께 전송하였습니다.<br>
 매퍼에서는 MyBatis의 when 절을 활용하여 전달된 번호를 비교한 후, 번호가 1이면 1차 승인자 컬럼에, 2면 2차 승인자 컬럼에, 3이면 3차 승인자 컬럼에 싸인이 저장되도록 설정하였습니다. 싸인이 성공적으로 저장되면 저장된 싸인 데이터를 다시 불러오는 작업도 수행하였습니다.<br>
@@ -95,8 +97,6 @@ Map으로 받을 때, 콤마로 연결된 값의 전체 문자열이 하나의 �
 List<String>을 활용하여 각 품목을 별도의 파라미터로 받아오는 방법을 선택했습니다. <br>
 예를 들어, @RequestParam("item") List<String> items와 같이 요청 파라미터를 List로 받아들이는 방식으로 구현했습니다. 이렇게 하면 같은 name값이 List안에 담겨 컨트롤러에서 쉽게 추출하여 처리할 수 있었습니다.<br>
 
-##  🔨 프로젝트의 개선점
-> - 결재 실시간 알림, 회수 기능추가<br>
 
 ## 💁‍♂️ 프로젝트 팀원
 |Backend|Frontend|
