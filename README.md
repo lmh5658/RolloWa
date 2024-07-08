@@ -55,7 +55,7 @@ TODAY는 오늘 날짜로 들어온 문서의 갯수를 명확히 파악하기 �
 
 |결재승인화면|
 |:---:|
-|![checkSign](https://github.com/lmh5658/RolloWa/assets/153481805/5ad800d9-0b56-4098-8590-ae141d3b361e)|
+![sign](https://github.com/lmh5658/RolloWa/assets/153481805/6b65475f-cc27-49ad-8647-3e4bb557e6ea)
 
 ![image](https://github.com/lmh5658/RolloWa/assets/153481805/cebafb43-af2f-4e26-9afc-7c6f56d7d952)<br>
 javaScript 화면<br>
