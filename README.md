@@ -70,8 +70,9 @@ java Controller 화면
 <br>
 
 |결재반려화면|
-|:---:|:---:|
-|![reject](https://github.com/lmh5658/RolloWa/assets/153481805/bad5d1a2-81b0-4d66-a735-eadf95ebb414)|![rejectcheck](https://github.com/lmh5658/RolloWa/assets/153481805/dc6c6328-2d44-4c7b-8b62-397dc3376fa5)|
+|:---:|
+|![reject](https://github.com/lmh5658/RolloWa/assets/153481805/bad5d1a2-81b0-4d66-a735-eadf95ebb414)|
+|![rejectcheck](https://github.com/lmh5658/RolloWa/assets/153481805/dc6c6328-2d44-4c7b-8b62-397dc3376fa5)|
 
 ![image](https://github.com/lmh5658/RolloWa/assets/153481805/e6c1d859-5aae-4547-8587-78da38a79349)
 결재가 반려될 때, 반려한 사람이 몇 번째 승인자인지 구별하기 위한 방법으로 새로운 컬럼을 추가하려고 생각했지만, 테이블에 너무 많은 컬럼이 추가되면 데이터베이스 I/O에 부하가 걸릴 수 있다는 점을 고려하여 좋지 않은 방법이라고 판단했습니다. 그래서 승인 데이터를 저장하는 컬럼에 '반려'라는 문자열을 저장하여 반려된 사람이 몇 번째 승인자인지 구분하도록 구현하게 되었습니다.
