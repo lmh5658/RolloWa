@@ -48,7 +48,7 @@ TODAY는 오늘 날짜로 들어온 문서의 갯수를 명확히 파악하기 �
 
 |결재신청화면|
 |:---:|
-|![insertApproval](https://github.com/lmh5658/RolloWa/assets/153481805/4312804d-884e-4560-b4c1-545a1919fd78)|
+|![insertApproval3](https://github.com/lmh5658/RolloWa/assets/153481805/cc0653aa-3d4e-4879-944c-7e17fda6d528)|
 
 ![image](https://github.com/lmh5658/RolloWa/assets/153481805/d8ee0088-38d1-4d05-8354-bf1755eefb9c) <br>
 수신자는 한 명 이상 선택할 수 있으며, 선택하지 않을 수도 있습니다. <br>
