@@ -28,6 +28,7 @@
 |게시판화면|
 |:---:|
 ||
+
 ![NO](https://github.com/lmh5658/RolloWa/assets/153481805/031a2ddd-49ff-4dab-b3dc-2f19dd019216)<br>
 
 결재대기함 또는 일주일 이상 지연된 결재대기함은 1차 승인자가 승인해야 2차 승인자가 게시글 목록을 볼 수 있고, 2차 승인자가 승인해야 3차 승인자가 게시글을 볼 수 있도록 구현하였습니다. <br>
@@ -35,15 +36,12 @@ WHERE 절에서 결재 상태가 '진행' 또는 '대기' 상태인 문서들만
 <br>
 한 가지 아쉬웠던 점은 번호가 아닌 이름으로 비교를 하다 보니 중복된 이름이 있을 수 있다는 점을 고려하지 않았다.
 
-|:---:|
-||
 ![image](https://github.com/lmh5658/RolloWa/assets/153481805/4998780b-da57-486b-b1d9-0696322ddcdd)<br>
 
 TODAY는 오늘 날짜로 들어온 문서의 갯수를 명확히 파악하기 위해 구현하였습니다.<br>
 <br>
 
-|:---:|
-||
+
 ![image](https://github.com/lmh5658/RolloWa/assets/153481805/37f87b0c-b2dd-4627-b657-566a9ea987be)<br>
 
 수신참조함 게시판에서는 수신참조인을 DB에 저장할 때 별도의 수신참조 테이블을 사용하고 있습니다. 전달된 userNo와 관련하여 해당 게시글 번호를 찾기 위해 중첩 서브 쿼리를 사용했습니다.
@@ -60,11 +58,12 @@ TODAY는 오늘 날짜로 들어온 문서의 갯수를 명확히 파악하기 �
 |결재승인화면|
 |:---:|
 ||
-javaScript 화면
+
+> - javaScript 화면
 ![image](https://github.com/lmh5658/RolloWa/assets/153481805/cebafb43-af2f-4e26-9afc-7c6f56d7d952)<br>
-java Controller 화면
+> - java Controller 화면
 ![image](https://github.com/lmh5658/RolloWa/assets/153481805/79549f95-907c-4c49-a07a-6152419ccbed)<br>
-mapper 화면
+> - mapper 화면
 ![image](https://github.com/lmh5658/RolloWa/assets/153481805/ec589c6c-bda1-4abe-a8da-68689bd492e1)<br>
 
 승인자를 구별하기 위해 삼항 연산자를 사용하여 1차 승인자이면 1, 2차 승인자이면 2, 3차 승인자이면 3으로 설정한 뒤, 싸인 이미지를 `signature.toDataURL("image/png")` 메서드를 사용하여 PNG 형식으로 변환한 후 데이터와 번호를 함께 전송하였습니다.<br>
@@ -72,7 +71,6 @@ mapper 화면
 마지막으로, 전달된 번호와 싸인 이미지를 여러 값을 전달할 수 있는 Map에 담아 전달하였으며, 승인자 번호에 따라 해당하는 싸인 이미지를 img 태그를 활용하여 출력하도록 구현하였습니다.<br>
 <br>
 
-|:---:|
 ![image](https://github.com/lmh5658/RolloWa/assets/153481805/ebb05bd3-ee5a-44a6-a323-4933c15c233e)<br>
 
 비품 신청서에서 최종 승인이 완료되었을 때, 비품 품목의 값을 serialize() 메서드를 사용하여 넘겨주고 데이터베이스에 insert 하였습니다.<br>
