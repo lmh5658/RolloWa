@@ -27,7 +27,7 @@
 
 |게시판화면|
 |:---:|
-||
+|![approvalMain](https://github.com/lmh5658/RolloWa/assets/153481805/2dc5fc14-9b32-4107-a31d-3be618786f96)|
 
 ![NO](https://github.com/lmh5658/RolloWa/assets/153481805/031a2ddd-49ff-4dab-b3dc-2f19dd019216)<br>
 
