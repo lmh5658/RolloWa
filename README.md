@@ -9,7 +9,7 @@
 ## ⚙ 기술 스택
 <div>
   <img src="https://img.shields.io/badge/html-E34F26?logo=html5&logoColor=white" height="30px"> 			&nbsp;
-  <img src="https://img.shields.io/badge/css3-1572B6?logo=css3&logoColor=white" height="30px"> 				&nbsp;
+  <img src="https://img.shields.io/badge/css-1572B6?logo=css3&logoColor=white" height="30px"> 				&nbsp;
   <img src="https://img.shields.io/badge/javascript-F7DF1E?logo=javascript&logoColor=black" height="30px"> 		&nbsp;
   <img src="https://img.shields.io/badge/jquery-0769AD?logo=jquery&logoColor=white" height="30px"> 			<br><br> 
   <img src="https://img.shields.io/badge/visualstudiocode-007ACC?logo=visualstudiocode&logoColor=white" height="30px">  &nbsp;
